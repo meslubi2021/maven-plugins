@@ -38,6 +38,7 @@ import org.apache.maven.model.Dependency;
 import org.apache.maven.model.Plugin;
 import org.apache.maven.model.PluginManagement;
 import org.apache.maven.model.ReportPlugin;
+import org.apache.maven.model.Reporting;
 import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.descriptor.PluginDescriptor;
 import org.apache.maven.plugins.annotations.Component;
@@ -689,12 +690,16 @@ public abstract class AbstractCheckstyleReport
             else
             {
                 // Not yet generated - check if the report is on its way
-                for ( ReportPlugin report : (Iterable<ReportPlugin>) getProject().getReportPlugins() )
+                Reporting mavenReporting = getProject().getModel().getReporting();
+                if ( mavenReporting != null )
                 {
-                    String artifactId = report.getArtifactId();
-                    if ( "maven-jxr-plugin".equals( artifactId ) || "jxr-maven-plugin".equals( artifactId ) )
+                    for ( ReportPlugin report : mavenReporting.getPlugins() )
                     {
-                        generator.setXrefLocation( relativePath );
+                        String artifactId = report.getArtifactId();
+                        if ( "maven-jxr-plugin".equals( artifactId ) || "jxr-maven-plugin".equals( artifactId ) )
+                        {
+                            generator.setXrefLocation( relativePath );
+                        }
                     }
                 }
             }
