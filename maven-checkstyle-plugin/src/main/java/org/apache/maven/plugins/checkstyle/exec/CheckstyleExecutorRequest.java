@@ -29,6 +29,7 @@ import org.apache.maven.model.Resource;
 import org.apache.maven.project.MavenProject;
 
 import com.puppycrawl.tools.checkstyle.DefaultLogger;
+import com.puppycrawl.tools.checkstyle.ConfigurationLoader.IgnoredModulesOptions;
 import com.puppycrawl.tools.checkstyle.api.AuditListener;
 
 /**
@@ -513,13 +514,13 @@ public class CheckstyleExecutorRequest
     }
 
     /**
-     * Returns true if ignored modules (modules with severity 'ignore') should be omitted.
+     * Returns the snume specifying if ignored modules (modules with severity 'ignore') should be omitted.
      *
-     * @return <code>true</code> if ignored modules should be omitted.
+     * @return <code>OMIT</code> if ignored modules should be omitted.
      */
-    public boolean isOmitIgnoredModules()
+    public IgnoredModulesOptions getOmitIgnoredModules()
     {
-        return omitIgnoredModules;
+        return ( omitIgnoredModules ) ? IgnoredModulesOptions.OMIT : IgnoredModulesOptions.EXECUTE;
     }
 
     /**
