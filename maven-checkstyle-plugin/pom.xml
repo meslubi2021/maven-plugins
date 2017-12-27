@@ -59,7 +59,7 @@ under the License.
 
   <properties>
     <!-- Because Checkstyle 6.2+ requires Java 7 -->
-    <javaVersion>7</javaVersion>
+    <javaVersion>8</javaVersion>
     <maven.compiler.source>1.${javaVersion}</maven.compiler.source>
     <maven.compiler.target>1.${javaVersion}</maven.compiler.target>
     <mavenVersion>3.0</mavenVersion>
@@ -296,7 +296,7 @@ under the License.
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>animal-sniffer-maven-plugin</artifactId>
-        <version>1.13</version>
+        <version>1.16</version>
         <configuration>
           <signature>
             <groupId>org.codehaus.mojo.signature</groupId>
