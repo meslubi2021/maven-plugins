@@ -80,13 +80,13 @@ under the License.
   </distributionManagement>
 
   <properties>
-    <mavenVersion>3.0</mavenVersion>
+    <mavenVersion>3.8.1</mavenVersion>
     <doxiaVersion>1.7</doxiaVersion>
     <!-- Because PMD 5.4+ requires Java 7 -->
     <javaVersion>1.7</javaVersion>
     <maven.compiler.source>${javaVersion}</maven.compiler.source>
     <maven.compiler.target>${javaVersion}</maven.compiler.target>
-    <pmdVersion>5.6.1</pmdVersion>
+    <pmdVersion>6.0.0</pmdVersion>
     <sitePluginVersion>3.4</sitePluginVersion>
     <projectInfoReportsPluginVersion>2.8</projectInfoReportsPluginVersion>
   </properties>
@@ -201,16 +201,16 @@ under the License.
       <version>2.9.0</version>
       <scope>test</scope>
     </dependency>
-    <dependency><!-- wiremock requires 4.5.3 but Doxia brings 4.0.2 and httpcore 4.0.1  -->
+    <dependency><!-- wiremock requires 4.5.13 but Doxia brings 4.0.2 and httpcore 4.0.1  -->
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>4.5.3</version>
+      <version>4.5.13</version>
       <!-- scope>test</scope> Required by Doxia transitively. -->
     </dependency>
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.5</version>
+      <version>2.7</version>
       <!-- scope>test</scope> Required by PMD transitively. -->
     </dependency>
   </dependencies>
