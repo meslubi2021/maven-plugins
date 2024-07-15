@@ -60,7 +60,7 @@ under the License.
 
   <properties>
     <scmVersion>1.9.5</scmVersion>
-    <mavenVersion>3.0</mavenVersion>
+    <mavenVersion>3.8.1</mavenVersion>
 
     <!-- for documentation purpose -->
     <maven-scm-provider-svnjava-version>2.0.6</maven-scm-provider-svnjava-version>
@@ -126,7 +126,7 @@ under the License.
     <dependency>
       <groupId>org.apache.maven.shared</groupId>
       <artifactId>maven-shared-utils</artifactId>
-      <version>3.2.0</version>
+      <version>3.3.3</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.jackson</groupId>
@@ -141,7 +141,7 @@ under the License.
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.5</version>
+      <version>2.7</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -157,7 +157,7 @@ under the License.
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
-      <version>4.11</version>
+      <version>4.13.1</version>
     </dependency>
   </dependencies>
  

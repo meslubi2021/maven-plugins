@@ -67,7 +67,7 @@ under the License.
   </contributors>
   
   <properties>
-    <mavenVersion>3.0</mavenVersion>
+    <mavenVersion>3.8.1</mavenVersion>
     <javaVersion>7</javaVersion>
   </properties>  
 
@@ -110,7 +110,7 @@ under the License.
     <dependency>
       <groupId>org.codehaus.plexus</groupId>
       <artifactId>plexus-archiver</artifactId>
-      <version>3.5</version>
+      <version>4.8.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -120,7 +120,7 @@ under the License.
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
