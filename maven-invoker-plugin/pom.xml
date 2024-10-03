@@ -60,7 +60,7 @@ under the License.
   </distributionManagement>
 
   <properties>
-    <mavenVersion>3.0</mavenVersion>
+    <mavenVersion>3.8.1</mavenVersion>
     <doxiaVersion>1.7</doxiaVersion>
     <doxia-sitetoolsVersion>1.7.4</doxia-sitetoolsVersion>
     <beanshell-groupId>org.beanshell</beanshell-groupId>
@@ -185,7 +185,7 @@ under the License.
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.5</version>
+      <version>2.14.0</version>
     </dependency>
     <dependency>
       <groupId>org.codehaus.plexus</groupId>
@@ -210,13 +210,13 @@ under the License.
     <dependency>
       <groupId>org.apache.maven.shared</groupId>
       <artifactId>maven-shared-utils</artifactId>
-      <version>3.1.0</version>
+      <version>3.3.3</version>
     </dependency>
 
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -228,7 +228,7 @@ under the License.
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-compat</artifactId>
-      <version>3.0</version>
+      <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
     
